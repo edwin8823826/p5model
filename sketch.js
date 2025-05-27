@@ -1,8 +1,8 @@
-let model;
+let lstmmodel;
 
 async function setup() {
   createCanvas(640, 480);
-  model = await tf.loadLayersModel('model1_tfjs/model.json');
+  lstmmodel = await tf.loadLayersModel('model1_tfjs/model.json');
   console.log('模型載入完成');
 }
 
